@@ -1,0 +1,23 @@
+
+
+> rxGetInfo(mortDS, numRows=5)
+File name: /home/remoteuser/ADS.xdf 
+Number of observations: 10000 
+Number of variables: 6 
+Number of blocks: 1 
+Compression type: zlib 
+Data (5 rows starting with row 1):
+  creditScore houseAge yearsEmploy ccDebt year default
+1         691       16           9   6725 2000       0
+2         691        4           4   5077 2000       0
+3         743       18           3   3080 2000       0
+4         728       22           1   4345 2000       0
+5         745       17           3   2969 2000       0
+
+ > rxGetVarInfo(mortDS)
+Var 1: creditScore, Type: integer, Low/High: (486, 895)
+Var 2: houseAge, Type: integer, Low/High: (0, 40)
+Var 3: yearsEmploy, Type: integer, Low/High: (0, 14)
+Var 4: ccDebt, Type: integer, Low/High: (0, 12275)
+Var 5: year, Type: integer, Low/High: (2000, 2000)
+Var 6: default, Type: integer, Low/High: (0, 1)
