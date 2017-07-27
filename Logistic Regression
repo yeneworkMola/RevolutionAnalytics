@@ -1,0 +1,34 @@
+> logitModel<-rxLogit(default~ccDebt+yearsEmploy+houseAge+creditScore, data=mortDS)
+Rows Read: 10000, Total Rows Processed: 10000, Total Chunk Time: 0.005 seconds 
+
+Starting values (iteration 1) time: 0.012 secs.
+Rows Read: 10000, Total Rows Processed: 10000, Total Chunk Time: 0.006 seconds 
+> summary(logitModel)
+Call:
+rxLogit(formula = default ~ ccDebt + yearsEmploy + houseAge + 
+    creditScore, data = mortDS)
+
+Logistic Regression Results for: default ~ ccDebt + yearsEmploy + houseAge +
+    creditScore
+Data: mortDS (RxXdfData Data Source)
+File name: ADS.xdf
+Dependent variable(s): default
+Total independent variables: 5 
+Number of valid observations: 10000
+Number of missing observations: 0 
+-2*LogLikelihood: 98.0903 (Residual deviance on 9995 degrees of freedom)
+ 
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -8.727707   5.023113  -1.738   0.0823 .  
+ccDebt       0.001445   0.000222   6.511 7.45e-11 ***
+yearsEmploy -0.321303   0.157559  -2.039   0.0414 *  
+houseAge     0.013048   0.041306   0.316   0.7521    
+creditScore -0.011633   0.007161  -1.625   0.1042    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Condition number of final variance-covariance matrix: 2.075 
+Number of iterations: 9
+
+
